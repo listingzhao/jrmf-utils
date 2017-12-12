@@ -1,0 +1,10 @@
+build/
+dist/
+node_modules/
+test/
+/src/*.vue
+/src/*.js
+/src/*.html
+favicon.ico
+.babelrc
+yarn.lock
