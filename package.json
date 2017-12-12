@@ -1,6 +1,6 @@
 {
   "name": "jrmf-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jrmf-utils",
   "main": "index.js",
   "scripts": {
