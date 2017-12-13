@@ -4,6 +4,7 @@
   "description": "jrmf-utils",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js src test/unit/specs",
     "test": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
   },
   "repository": {
