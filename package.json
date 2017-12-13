@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-main": "node build/build-main.js",
+    "build-umd": "node build/build-umd.js",
     "lint": "eslint --ext .js src test/unit/specs",
     "test": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
   },
@@ -50,6 +51,7 @@
     "mocha": "^4.0.1",
     "sinon": "^4.1.3",
     "sinon-chai": "^2.14.0",
+    "thunkify": "^2.1.2",
     "webpack": "^3.10.0",
     "webpack-merge": "^4.1.1"
   },
