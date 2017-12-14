@@ -1,12 +1,6 @@
 'use strict'
 process.env.NODE_ENV = 'production'
 
-/**
- * --locale='zh-CN'
- * --namespace='vux'
- * --components=Group,Cell
- */
-
 var argv = require('yargs').argv
 var namespace = argv.namespace || 'mutils'
 
@@ -23,15 +17,11 @@ const fs = require('fs')
 const touch = require('touch')
 const path = require('path')
 
-let list = require(path.resolve(__dirname, '../src/datas/component_list.json'))
 const maps = require(path.resolve(__dirname, '../src/components/map.json'))
 
 let others = []
 for (let i in maps) {
-  let match = list.filter(function (one) {
-    return _camelCase(one.name) === i
-  })
-  if (match.length === 0 && !/NOTICE/.test(i)) {
+  if (!/NOTICE/.test(i)) {
     others.push({
       name: toDash(i),
       importName: i,
@@ -41,7 +31,6 @@ for (let i in maps) {
 }
 
 var co = require('co')
-var pkg = require(path.resolve(__dirname, '../package.json'))
 
 config.devtool = false
 
@@ -85,7 +74,7 @@ function buildMainConfig () {
   // list all components
   const list = require('../src/components/map.json')
   let code = `const _mutils = {}\n
-const isBrowser = typeof window !== 'undefined'\n`
+              const isBrowser = typeof window !== 'undefined'\n`
   code += `isBrowser && (window.mutils = _mutils)\n\n`
 
   delete list['NOTICE']

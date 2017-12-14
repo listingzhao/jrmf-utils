@@ -7,4 +7,9 @@ testsContext.keys().forEach(testsContext)
 // you want coverage for.
 
 const srcContext = require.context('../../src/components/', true, /^.*\.js$/)
-srcContext.keys().forEach(srcContext)
+srcContext.keys().filter((one) => {
+  if (/index\.js/.test(one)) {
+    return false
+  }
+  return true
+}).forEach(srcContext)

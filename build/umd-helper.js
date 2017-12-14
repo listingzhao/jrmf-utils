@@ -17,7 +17,6 @@ var build = thunkify(function (config, name, cb) {
       // touch.sync(path.resolve(config.output.path, './index.min.css'))
     }
     var jsonStats = stats.toJson()
-    console.log(jsonStats)
     // var assets = jsonStats.assets[0]
     // var size = assets.size / 1024
     // size = size.toFixed(2) + 'k'
