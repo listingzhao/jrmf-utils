@@ -1,5 +1,7 @@
-import { arrayEqual } from 'jrmf'
+// THIS FILE IS ONLY FOR IDE ENTRY CHECKING NOT FOR REAL USAGE
 
-export default {
-  arrayEqual
+import isEqual from 'src/components/array/isEqual'
+
+export {
+  isEqual
 }

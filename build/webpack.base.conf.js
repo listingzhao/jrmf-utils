@@ -44,6 +44,6 @@ const webpackConfig = {
     ]
   }
 }
-const jrmfConfig = require('../config/jrmf-config')
+const jrmfConfig = require('./jrmf-config')
 
 module.exports = jrmfLoader.merge(webpackConfig, jrmfConfig)
