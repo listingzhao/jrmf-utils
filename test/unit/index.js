@@ -1,4 +1,4 @@
-// require all test files (files that ends with .spec.js)
+// require all test files (files that ends with .test.js)
 const testsContext = require.context('../../src/components/', true, /test.js$/)
 testsContext.keys().forEach(testsContext)
 
