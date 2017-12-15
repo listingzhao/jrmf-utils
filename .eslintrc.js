@@ -11,7 +11,7 @@ module.exports = {
   },
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: 'standard',
-  globals: {'expect': true, 'it': true, 'describe': true, 'ga': true, 'window': true, 'document': true, 'alert': true, 'api': true, 'apiready': true},
+  globals: {'expect': true, 'it': true, 'before': true, 'after': true, 'describe': true, 'ga': true, 'window': true, 'document': true, 'alert': true, 'api': true, 'apiready': true},
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
