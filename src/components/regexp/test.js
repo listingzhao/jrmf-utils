@@ -2,6 +2,7 @@ import { assert } from 'chai'
 import isEmail from './isEmail'
 import isPhone from './isPhone'
 import isBankno from './isBankno'
+import isCardNo from './isCardNo'
 
 describe('regexp API Test', function () {
   it(`isEmail('7@qq.com') should return true`, () => {
@@ -18,5 +19,11 @@ describe('regexp API Test', function () {
   })
   it(`isBankno('62220200120418544') should return true`, () => {
     assert.isOk(isBankno('62220200120418544'))
+  })
+  it(`isIdCard('45032619840627183x') should return true`, () => {
+    assert.isOk(isCardNo('45032619840627183x'))
+  })
+  it(`isIdCard('150822198801099559') should return true`, () => {
+    assert.isOk(isCardNo('150822198801099559'))
   })
 })
