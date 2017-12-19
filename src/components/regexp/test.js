@@ -1,6 +1,7 @@
 import { assert } from 'chai'
 import isEmail from './isEmail'
 import isPhone from './isPhone'
+import isBankno from './isBankno'
 
 describe('regexp API Test', function () {
   it(`isEmail('7@qq.com') should return true`, () => {
@@ -14,5 +15,8 @@ describe('regexp API Test', function () {
   })
   it(`isPhone('15100000000') should return true`, () => {
     assert.isOk(isPhone('15100000000'))
+  })
+  it(`isBankno('62220200120418544') should return true`, () => {
+    assert.isOk(isBankno('62220200120418544'))
   })
 })
