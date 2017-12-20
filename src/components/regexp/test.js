@@ -3,6 +3,7 @@ import isEmail from './isEmail'
 import isPhone from './isPhone'
 import isBankno from './isBankno'
 import isCardNo from './isCardNo'
+import isChinese from './isChinese'
 
 describe('regexp API Test', function () {
   it(`isEmail('7@qq.com') should return true`, () => {
@@ -25,5 +26,11 @@ describe('regexp API Test', function () {
   })
   it(`isIdCard('150822198801099559') should return true`, () => {
     assert.isOk(isCardNo('150822198801099559'))
+  })
+  it(`isChinese('余待永') should return true`, () => {
+    assert.isOk(isChinese('余待永'))
+  })
+  it(`isChinese('aaa123') should return false`, () => {
+    assert.isNotOk(isChinese('aaa123'))
   })
 })

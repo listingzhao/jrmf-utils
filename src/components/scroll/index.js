@@ -16,7 +16,7 @@ function setScrollTop (value) {
   window.scrollTo(0, value)
 }
 
-export default {
+export {
   getScrollTop,
   setScrollTop
 }
