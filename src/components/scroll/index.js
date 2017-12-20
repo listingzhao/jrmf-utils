@@ -2,7 +2,7 @@
  * [getScrollTop]
  * @return {[type]} [description]
  */
-export function getScrollTop () {
+function getScrollTop () {
   const supportPageYOffset = window.pageYOffset !== undefined
   const isCSS1Compat = ((document.compatMode || '') === 'CSS1Compat')
   return supportPageYOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
@@ -12,6 +12,11 @@ export function getScrollTop () {
  * [setScrollTop description]
  * @param {[type]} value [description]
  */
-export function setScrollTop (value) {
+function setScrollTop (value) {
   window.scrollTo(0, value)
+}
+
+export default {
+  getScrollTop,
+  setScrollTop
 }

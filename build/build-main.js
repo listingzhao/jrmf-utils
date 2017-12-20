@@ -14,7 +14,7 @@ for (let i in maps) {
 
 str += `\nexport {\n`
 for (let i in maps) {
-  str += `  ${i}${i === 'isEqual' ? '' : ','}\n`
+  str += `  ${i}${i === 'mScroll' ? '' : ','}\n`
 }
 str += '}\n'
 
