@@ -6,5 +6,6 @@
   "isCardNo": "src/components/regexp/isCardNo",
   "isEmail": "src/components/regexp/isEmail",
   "isPhone": "src/components/regexp/isPhone",
-  "mScroll": "src/components/scroll/index"
+  "mScroll": "src/components/scroll/index",
+  "Spinner": "src/components/spinner"
 }

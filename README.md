@@ -8,6 +8,14 @@
 #### jrmf-utils JavaScript tool library
 > Internal encapsulates the commonly used browser object, array, function, purpose is to achieve the effect of the box.
 
+# Quick Start
+#### Browser
+```
+<script src="mutils.js"></script>
+<script>
+mutils.isPhone('1510166000') // return false
+</script>
+```
 
 # License
 MIT
