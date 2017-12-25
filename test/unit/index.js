@@ -7,8 +7,10 @@ testsContext.keys().forEach(testsContext)
 // you want coverage for.
 
 const srcContext = require.context('../../src/components/', true, /^.*\.js$/)
+
 srcContext.keys().filter((one) => {
-  if (/index\.js/.test(one)) {
+  console.log(one)
+  if (/index\.js/.test(one) || /spinner/.test(one)) {
     return false
   }
   return true
