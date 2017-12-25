@@ -7,6 +7,7 @@ import isCardNo from 'src/components/regexp/isCardNo'
 import isEmail from 'src/components/regexp/isEmail'
 import isPhone from 'src/components/regexp/isPhone'
 import mScroll from 'src/components/scroll/index'
+import Spinner from 'src/components/spinner'
 
 export {
   isEqual,
@@ -15,5 +16,6 @@ export {
   isCardNo,
   isEmail,
   isPhone,
-  mScroll
+  mScroll,
+  Spinner
 }
