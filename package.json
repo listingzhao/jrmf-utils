@@ -2,7 +2,7 @@
   "name": "jrmf-utils",
   "version": "1.2.4",
   "description": "jrmf-utils",
-  "main": "dist/mutils.min.js",
+  "main": "dist/jrmf-utils.js",
   "scripts": {
     "build": "node build/build.js",
     "build-main": "node build/build-main.js",
