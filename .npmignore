@@ -1,7 +1,6 @@
 build/
 node_modules/
 test/
-/src/*.js
 favicon.ico
 .babelrc
 yarn.lock
