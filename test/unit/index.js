@@ -9,7 +9,6 @@ testsContext.keys().forEach(testsContext)
 const srcContext = require.context('../../src/components/', true, /^.*\.js$/)
 
 srcContext.keys().filter((one) => {
-  console.log(one)
   if (/index\.js/.test(one) || /spinner/.test(one)) {
     return false
   }

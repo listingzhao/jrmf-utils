@@ -1,12 +1,11 @@
 var path = require('path')
 var config = require('../config')
-const jrmfLoader = require('jrmf-loader')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-const webpackConfig = {
+module.exports = {
   entry: {
     app: './src/index.js'
   },
@@ -44,6 +43,3 @@ const webpackConfig = {
     ]
   }
 }
-const jrmfConfig = require('./jrmf-config')
-
-module.exports = jrmfLoader.merge(webpackConfig, jrmfConfig)
