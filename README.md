@@ -10,7 +10,7 @@
 
 # Quick Start
 #### Browser
-```
+``` html
 <script src="https://cdn.jsdelivr.net/npm/jrmf-utils/dist/mutils.min.js"></script>
 <script>
 mutils.isPhone('1510166000') // return false

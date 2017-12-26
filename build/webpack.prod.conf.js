@@ -11,8 +11,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath(`mutils.min.js`),
-    library: 'mutils',
+    filename: utils.assetsPath(`jrmf-utils.js`),
+    library: 'jrmfUtils',
     libraryTarget: 'umd'
   },
   // externals: {
