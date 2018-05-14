@@ -3,6 +3,7 @@ const browser = {
     const ua = navigator.userAgent
     return {
       webKit: ua.indexOf('AppleWebKit') > -1,
+      gecko: ua.indexOf('Gecko') !== -1,
       wechat: /MicroMessenger/i.test(ua),
       android: ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1,
       ios: /\(i[^;]+;( U;)? CPU.+Mac OS X/.test(ua)
