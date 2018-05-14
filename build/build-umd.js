@@ -14,7 +14,6 @@ let config = require('./webpack.prod.conf.js')
 const webpack = require('webpack')
 const mkdirp = require('mkdirp')
 const fs = require('fs')
-const touch = require('touch')
 const path = require('path')
 
 const maps = require(path.resolve(__dirname, '../src/components/map.json'))

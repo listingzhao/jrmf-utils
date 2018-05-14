@@ -1,6 +1,10 @@
 build/
+config/
 node_modules/
 test/
 favicon.ico
 .babelrc
+.eslintignore
+.eslintrc.js
+.travis.yml
 yarn.lock
