@@ -13,7 +13,7 @@ const browser = {
     return {
       isChrome: ua.indexOf('Chrome') && window.chrome,
       isIE: window.ActiveXObject !== undefined && ua.indexOf('MSIE') !== -1,
-      isFireFox: ua.indexOf('FireFox') !== -1,
+      isFireFox: ua.indexOf('Firefox') !== -1,
       isSafari: ua.indexOf('Safari') !== -1 && ua.indexOf('Version') !== -1
     }
   })(),
