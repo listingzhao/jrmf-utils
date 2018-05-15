@@ -69,6 +69,8 @@ const browser = {
       navigator.platform === 'MacPPC' ||
       navigator.platform === 'Macintosh'
     if (isMac) return 'mac'
+    let isLinux = navigator.platform.indexOf('Linux') > -1
+    if (isLinux) return 'linux'
     if (isWin) {
       let isWinXP =
         ua.indexOf('Windows NT 5.1') > -1 || ua.indexOf('Windows XP') > -1
