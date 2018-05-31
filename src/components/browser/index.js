@@ -10,6 +10,20 @@ const browser = {
       ios: /\(i[^;]+;( U;)? CPU.+Mac OS X/.test(ua)
     }
   })(),
+  position: function (cb) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPositon)
+    } else {
+      console.log('不支持获取地理位置！')
+    }
+    function showPositon (pos) {
+      var obj = {
+        lat: pos.coords.latitude,
+        lng: pos.coords.longitude
+      }
+      cb(obj)
+    }
+  },
   types: (function () {
     return {
       isChrome: ua.indexOf('Chrome') && window.chrome,

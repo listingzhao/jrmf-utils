@@ -29,4 +29,16 @@ describe('browser API Test', function () {
   it(`browser.language should return true`, () => {
     assert.isOk(browser.language)
   })
+  it(`browser.position should return obj`, () => {
+    var obj = {}
+    function pos (position) {
+      console.log(position)
+      obj = position
+      return position
+    }
+    browser.position(pos)
+    setTimeout(function () {
+      assert.isObject(obj)
+    }, 1000)
+  })
 })
