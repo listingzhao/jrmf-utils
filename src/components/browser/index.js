@@ -10,6 +10,19 @@ const browser = {
       ios: /\(i[^;]+;( U;)? CPU.+Mac OS X/.test(ua)
     }
   })(),
+  position: function (cb) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPositon)
+    }
+    function showPositon (pos) {
+      var obj = {
+        lat: pos && pos.coords.latitude,
+        lng: pos && pos.coords.longitude
+      }
+      cb(obj)
+      return obj
+    }
+  },
   types: (function () {
     return {
       isChrome: ua.indexOf('Chrome') && window.chrome,
