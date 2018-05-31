@@ -13,15 +13,14 @@ const browser = {
   position: function (cb) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPositon)
-    } else {
-      console.log('不支持获取地理位置！')
     }
     function showPositon (pos) {
       var obj = {
-        lat: pos.coords.latitude,
-        lng: pos.coords.longitude
+        lat: pos && pos.coords.latitude,
+        lng: pos && pos.coords.longitude
       }
       cb(obj)
+      return obj
     }
   },
   types: (function () {
