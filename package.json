@@ -1,6 +1,6 @@
 {
   "name": "jrmf-utils",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "jrmf-utils",
   "main": "dist/jrmf-utils.js",
   "jsdelivr": "dist/jrmf-utils.js",
