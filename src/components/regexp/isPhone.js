@@ -4,6 +4,6 @@
  * @return {Boolean}     [description]
  */
 export default function isPhone (str) {
-  const reg = /^1((3[0-9])|(4[57])|([58][012356789]))\d{8}$/g
+  const reg = /^1((7[0-9])|(3[0-9])|(4[57])|([58][012356789]))\d{8}$/g
   return reg.test(str)
 }

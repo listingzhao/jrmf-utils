@@ -20,7 +20,6 @@ const browser = {
         lng: pos && pos.coords.longitude
       }
       cb(obj)
-      return obj
     }
   },
   types: (function () {

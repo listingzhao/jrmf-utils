@@ -18,6 +18,9 @@ describe('regexp API Test', function () {
   it(`isPhone('15100000000') should return true`, () => {
     assert.isOk(isPhone('15100000000'))
   })
+  it(`isPhone('17557289510') should return true`, () => {
+    assert.isOk(isPhone('17557289510'))
+  })
   it(`isBankno('62220200120418544') should return true`, () => {
     assert.isOk(isBankno('62220200120418544'))
   })
